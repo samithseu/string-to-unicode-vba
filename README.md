@@ -1,4 +1,4 @@
-# String To Unicde In VBA
+# String To Unicde For VBA
 
 This is a simple script that converts a string to unicode code in VBA.
 
