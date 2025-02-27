@@ -1,7 +1,6 @@
 # String To Unicde For VBA
 
-This is a simple script that converts a string to unicode code in VBA.
-
+This is a simple script that converts a string to unicode code for using in VBA.
 I created this because VBA doesn't support Khmer language, so I had to convert the string to unicode code.
 
 ## Usage
