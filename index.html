@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert Khmer Words to Unicode Codes</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/1372/1372789.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <h1>Convert Khmer Words to Unicode Code</h1>
+        <div class="input-row">
+          <input
+            type="text"
+            name="kh_word"
+            id="kh_word"
+            placeholder="Enter khmer word..."
+          />
+        </div>
+        <div class="input-row">
+          <input type="submit" id="submitBtn" value="Convert" />
+        </div>
+        <div class="input-row">
+          <textarea
+            name="converted"
+            id="converted"
+            readonly
+            rows="10"
+          ></textarea>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

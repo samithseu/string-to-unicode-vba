@@ -1,0 +1,104 @@
+@layer reset,styling,utils;
+@layer reset {
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-inline: 0;
+    margin-block: 0;
+  }
+  html {
+    font-size: 87.5%;
+    font-family: "Inter", sans-serif;
+    color-scheme: dark light;
+  }
+  body {
+    min-height: 100dvh;
+  }
+  img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+}
+@layer styling {
+  .wrapper {
+    width: 100vw;
+    min-height: inherit;
+    display: grid;
+    place-items: center;
+  }
+
+  .wrapper form {
+    width: max-content;
+    height: max-content;
+    padding: 2rem;
+    border: 1px solid cyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    gap: 2rem;
+    & h1 {
+      font-size: 2rem;
+      color: cyan;
+      text-align: center;
+      text-transform: capitalize;
+    }
+  }
+
+  .wrapper form .input-row {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      resize: none;
+      outline: none;
+      border: none;
+      border: 1px solid cyan;
+      border-radius: 0.3rem;
+      background-color: rgba(0, 255, 255, 0.3);
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      &::selection {
+        background-color: cyan;
+        color: black;
+      }
+    }
+
+    & > input[type="submit"] {
+      background-color: cyan;
+      color: black;
+      transition: 200ms ease-out;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(0, 157, 157);
+        color: white;
+      }
+    }
+  }
+}
+@layer utils {
+}
